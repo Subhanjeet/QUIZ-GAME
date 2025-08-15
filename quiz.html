@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Login Form</title>
+ <style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #74ebd5, #9face6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  form {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+  }
+
+  input[type="text"],
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #357ab8;
+  }
+</style>
+</head>
+<body>
+  <form action="quiz1.php" method="post">
+    <h2>Student Login</h2>
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="rollno">Roll No.</label>
+    <input type="text" id="rollno" name="rollno" required>
+
+    <label for="class">Class</label>
+    <select id="class" name="class" required>
+      <option value="">--Select Class--</option>
+      <option value="Btech CSE">BTech CSE</option>
+      <option value="Btech AIML">BTech AIML</option>
+      <option value="Btech IT">Btech IT</option>
+      <option value="Btech CSBS">BTech CSBS</option>
+      <option value="other">Other Course</option>
+    </select>
+
+    <button type="submit">Login</button>
+  </form>
+</body>
+</html>
