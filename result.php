@@ -22,7 +22,7 @@ for ($i = 0; $i < 10; $i++) {
 
 <!DOCTYPE html>
 <html>
-    <link rel="stylesheet" href="quiz_2.css">
+    <link rel="stylesheet" href="result.css">
 <head>
     <title>Quiz Result</title>
 </head>
@@ -41,6 +41,6 @@ for ($i = 0; $i < 10; $i++) {
             </li>
         <?php endforeach; ?>
     </ol>
-    <a href="quiz.php">Try Another Random Quiz</a>
+    <a href="quiz1.php">Try Another Random Quiz</a>
 </body>
 </html>
